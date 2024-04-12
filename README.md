@@ -8,5 +8,5 @@ Primero, visita la [documentación sobre cómo configurar todo](https://edu2.ute
 git clone git@github.com:fablabbcn/efdi-template.git
 ```
 
-Puedes visitar la demo del template aquí: https://fablabbcn.github.io/efdi-template/
+PuedeS visitar la demo del template aquí: https://fablabbcn.github.io/efdi-template/
 
