@@ -2,4 +2,4 @@
 
 ![](../images/perezoso.jpg)
 
-Aqui va un texto de prueba.
+Aqui va un texto de prueba.....
