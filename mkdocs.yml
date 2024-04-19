@@ -25,16 +25,12 @@ nav:
 extra:
   social:
     # For other social icons at https://squidfunk.github.io/mkdocs-material/setup/adding-social-links/
-    - icon: fontawesome/brands/medium
-      link: https://medium.com/
     - icon: fontawesome/brands/instagram
-      link: https://instagram.com/
+      link: https://www.instagram.com/marceluy/
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/
-    - icon: fontawesome/brands/linkedin
-      link: "https://www.linkedin.com/in/"
+      link: https://twitter.com/dounmonton
     - icon: fontawesome/brands/github
-      link: "https://github.com/"
+      link: "https://github.com/marcelbentancor/"
 
 theme:
   name: material
