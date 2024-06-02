@@ -438,16 +438,16 @@
                 
                 <h1 id="mt03">MT03<a class="headerlink" href="#mt03" title="Permanent link">&para;</a></h1>
 <p>En este módulo se encargó hacer una pieza usando corte láser CNC, compuesta por tres piezas unidas por encastres, sin pegamento o piezas auxiliares para unirlas. Pudiendo ser fabricada en cartón o placa MDF de 3 mm de espesor, la material total disponible para cada estudiante es de 600 x 450 mm. </p>
-<p><strong>Exploración de ideas para definir la pieza y su diseño</strong>
+<p><strong>Exploración de ideas para definir la pieza y su diseño</strong><br>
 Se exploraron diversas páginas webs (thingiverse, reedit, pinterest, etc) para tener una mejor idea del tipo de piezas que pueden fabricarse haciendo uso exclusivamente del corte láser cnc con madera o cartón.
 Para elegir que tipo pieza se diseñaría se tomó en cuenta: 
 - Qué tuviera una utilidad pŕactica. 
 - Que pudiera incorporar el uso de corte, grabado y rasterización el CNC láser, y que además pudiera incorporar una pieza con kerfing para curvar madera. 
 - Fuera relativamente simple de armar con la piezas cortadas. </p>
 <p>El diseño general elegido fué el de un soporte para teléfono celular, hecho de dos piezas de madera encastradas entre sí. Para incorporar una pieza con kerfing, se optó por agregarle dicha pieza a modo decorativo, además de ser útil para dar una ide de la flexibilidad lograda con un cierto diseño de kerfing usado para hacer la pieza. </p>
-<p><strong>Diseño del boceto de la pieza en un editor de gráficos 3D</strong>
+<p><strong>Diseño del boceto de la pieza en un editor de gráficos 3D</strong><br>
 Dado que tengo más práctica en el uso del software de diseño 3D Onshape, hice un bosquejo 3D de la pieza usando esta herramienta, ver la figura 1. </p>
-<p><img alt="leyenda de fig1a" src="../../images/MT03/fig1a.png" width:50em="width:50em" />
+<p><img alt="" src="../../images/MT03/fig1a.png" />
 <img alt="" src="../../images/MT03/fig1b.png" />
 <strong>Figura 1</strong>, vistas generales del boceto y del bosquejo 3D de la pieza, hecho en Onshape. </p>
 <p>Luego, ya con una ide más clara de diseño partir del boceto hecho en Openshape, usé el programa Fusion para hacerlo, ya que busco mejorar el manejo que tengo del mismo, en particular, para lograr un diseño parametrizado. 
@@ -471,7 +471,7 @@ Tres medidas del boceto fueron  parametrizadas (figura 2):
 <p><img alt="" src="../../images/MT03/fig5a.png" />
 <img alt="" src="../../images/MT03/fig5b.png" />
 <strong>Figura 5</strong>, vista 3D del soporte. No se muestra la banda decorativa de madera curvada usando la técnica de kerfing. </p>
-<p><strong>Procesamiento del diseño en un editor de gráficos vectoriales</strong>
+<p><strong>Procesamiento del diseño en un editor de gráficos vectoriales</strong><br>
 El boceto exportado como archivo .dxf desde el programa Fusion, fue importado en un documento del programa Inkscape. Usando la herramienta de medición se obtuvo la medida del ancho de uno de los soportes, y se calculo la relacion respecto a la medida real o desesada. Usando ese factor de escalabilidad se transofrmó el tamaño de las piezas, teniendo cuidado de conservar la relación de proporciones entre el ancho y la altura. </p>
 <p>Luego se hicieron estas etapas: 
 - Se inspeccionó el diseño para encontrar lineas superpuestas, y en caso de haberlas, se eliminó a una de ellas. 
@@ -488,7 +488,7 @@ El boceto exportado como archivo .dxf desde el programa Fusion, fue importado en
 También diseñé una grilla de 9 x 9 cuadraddos, para que el soporte tmabien sirva como referencia sobre los valores de velocidad y ptencia del laser y cual es su efecto sobre el rasterizado de imágenes en el soporte que se empleará para esta pieza. En esta pare usé herramietnas básicad de alineamiento, distribucioón y rotacion que brinda Inkscape. </p>
 <p><img alt="" src="../../images/MT03/fig7.png" />
 <strong>Figura 7</strong>, disposición en rdworks de las figuras diseñadas. </p>
-<p><strong>Procesamiento en el software rdworks</strong>
+<p><strong>Procesamiento en el software rdworks</strong><br>
 El boceto vectorial procesado se guardó, continuando con su formato .dxf, y luego se importó en el programa rdworks. Este programa el tipo CAM toma el diseño hecho con los otros programas, que asistieron al diseño como programas del tipo CAD. </p>
 <p>Se verificó el tamaño del diseño, y reecalándolo de ser necesario para mantener las dimenciones deseadas desde un comienzo. Se distribuyeron los diseños de las diversas piezas de tal forma de minimizar los desperdicios de material. </p>
 <p>Se seleccionaron diferentes figuras de acuerdo a su destion en el CNC láser: corte, grabado o rasterizado. A cada destino le corresponde una capa diferente, para cuya configuración se siguió el tutorial incluido por el docente encargado de este módulo técnico. </p>
