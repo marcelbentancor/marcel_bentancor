@@ -39,7 +39,7 @@ theme:
   name: material
   palette:
     # try other colors https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
-    primary: #00BFA5
+    primary: #0277BD
     accent: purple
   font:
     # See available fonts at https://fonts.google.com/
