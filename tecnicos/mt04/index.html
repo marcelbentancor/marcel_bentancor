@@ -11,7 +11,7 @@
         <meta name="description" content="Master in Design for Emergent Futures">
       
       
-        <link rel="canonical" href="https://fablabbcn.github.io/efdi-template/tecnicos/mt01/">
+        <link rel="canonical" href="https://fablabbcn.github.io/efdi-template/tecnicos/mt04/">
       
       
         <meta name="author" content="Marcel Bentancor">
@@ -21,7 +21,7 @@
     
     
       
-        <title>MT01 - Marcel Bentancor - UTEC & Fab Lab Barcelona</title>
+        <title>MT04 - Marcel Bentancor - UTEC & Fab Lab Barcelona</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mt01" class="md-skip">
+        <a href="#mt04" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              MT01
+              MT04
             
           </span>
         </div>
@@ -241,20 +241,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="MT01" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../mt01/" title="MT01" class="md-nav__link">
       MT01
     </a>
-    
   </li>
 
         
@@ -286,11 +277,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../mt04/" title="MT04" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="MT04" class="md-nav__link md-nav__link--active">
       MT04
     </a>
+    
   </li>
 
         
@@ -452,7 +452,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/fablabbcn/efdi-template/edit/master/docs/tecnicos/mt01.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/fablabbcn/efdi-template/edit/master/docs/tecnicos/mt04.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -460,14 +460,28 @@
                   
                 
                 
-                <h1 id="mt01">MT01<a class="headerlink" href="#mt01" title="Permanent link">&para;</a></h1>
-<p>Para comenzar este sitio web en la unidad MT01 del posgrado, seguí los tutoriales y recursos publicados en la plataforma de UTEC. La dificultad mayor que tuve al seguir estos tutoriales fue que enla página web online no se visualizaban los cambios en el contenido que hacia en forma local, asi como tambien el aspecto era diferente al del template que descargué desde el github que hicieron los docentes, aun cuando si lograba actualizar los archivos de la página en mi fork del repositorio, en las siguientes imagenes se muestra como se veia mi web y la acción ejecutada en github: </p>
-<p><img alt="" src="../mt01_MLB.webp" />
-<img alt="" src="../mt02_MLB.webp" /></p>
-<p>Tras consultar, un docente me indicó que qu estaba haciendo el deploy en un lugar difernete al /gh-pagesn de mi repositorio github (ver imagen adjunta) al corregir esto, el inconveniente se solucionó. </p>
-<p><img alt="" src="../solucion_MLB.png" /></p>
-<p>En el archivo mt01.md edité los enlaces las redes sociales para dirgir sus enlaces a mis redes personales. </p>
-<p><img alt="" src="../adaptacion_iconos_MLB.png" /></p>
+                <h1 id="mt04">MT04<a class="headerlink" href="#mt04" title="Permanent link">&para;</a></h1>
+<p>En este módulo hice un sistema controlado por una placa Arduino UNO, que consta de 2 sensores (un fotoresistor y un sensor ultrasónico de movimiento SRF05), un pulsador y dos actuadores: un led y un servomotor. </p>
+<p>El diseño es tal que: el led muestra un brillo dimerizable mediante PWM en forma proporcional a la intensidad de la luz captada por el fotoresitor. Por su parte, la proximidad de un objeto detectada por el sensor de distancia es indicada por un indicador impulsado por el servomotor. En cuanto al pulsador, cuando éste es pulsado el LED parpadea 3 veces (medio segundo en cada endendido y apagado) y retorna al valor de intensidad que tenia previamente a que fuera oprimido el pulsador. </p>
+<p>En el puerto serial pueden leerse los valores de distancia medida por el sensor ultrasónico. la intensidad de luz captada por el fotoresistor y la intensidad relativa de la luz emitida por el LED. </p>
+<p>En primer lugar el sistema se armó y programó de manera virtual usando la web de <a href="https://www.tinkercad.com/">Tinkercad</a>. Cabe destacar que en Tinker actualmente no está disponible el sensor de movimiento HC-SR05, indicado en el enunciado del ejercicio, sino que está disponible uno muy similar el HC-SR04. Éste tiene unos centímetros menos de alcance y carece de un pin de alerta configurable para cuando el objeto supera cierto límite. Son dos sensores muy similares, ambos pueden operarse con 4 pines, y además coincide con el modelo de este tipo de sensor que disponia para hacer el ensamblado del sistema. </p>
+<p>Los componentes fueron siendo agregados paulatinamente y generandosé así versiones cada vez más complejas del script. Para depurar la programación se incluyeron salidas de las variable hacia el puerto serial. Para la codificación del programa se contó con la asistencia de las aplicaciones web de los modelos grandes de lenguaje <a href="https://chatgpt.com/">ChatGPT4o</a> y <a href="https://claude.ai/">Claude 3.5 Sonnet</a>. Una vez que el sistema se comportó de la manera deseada, antes descripta, se procedió a su ensamblado físico. </p>
+<p>El esquema de conexiones del sistem armado se muestra en la figura 1. Mientras que información leída a través del puerto serial se muestra en la figura 2. </p>
+<p><img alt="" src="../../images/MT04/fig1.png" />
+<strong>Figura 1</strong>, esquema de conexiones del sistema simulado en la web de Tinkercad. </p>
+<p><img alt="" src="../../images/MT04/fig2.png" />
+<strong>Figura 2</strong>, salida obtenida en tiempo real a través del puerto serial. Simulación hecha en la web de Tinkercad. </p>
+<p>El sistema físico armado se muestra en las figuras 3 y 4, y un video mostrando su funcionamiento puede <a href="https://drive.google.com/file/d/1NUTHo3zRko7nBVR2gRbXUTaZLLzp3Z_l/view?usp=sharing"><strong>descargarse desde aquí</strong></a>. </p>
+<video width="640" height="360" controls>
+  <source src="https://drive.google.com/file/d/1NUTHo3zRko7nBVR2gRbXUTaZLLzp3Z_l/view?usp=sharing" type="video/mp4">
+  Tu navegador no soporta la etiqueta de video.
+</video>
+
+<p><img alt="" src="../../images/MT04/foto3.png" />
+<strong>Figura 3</strong>, imágen del sistema físicamente ensamblado. </p>
+<p><img alt="" src="../../images/MT04/foto4.jpeg" />
+<strong>Figura 4</strong>, Detalle de los componentes conectados al protoboard. </p>
+<p>El archivo conteniendo el script generado puede  <a href="../archivos/MT04/script_actividad_mt04_v1/script_actividad_mt04_v1.sh"><strong>descargarse desde aquí</strong></a>. </p>
                 
                   
                     
@@ -499,7 +513,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../about/me/" title="About" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mt03/" title="MT03" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -508,19 +522,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                About
+                MT03
               </div>
             </div>
           </a>
         
         
-          <a href="../mt02/" title="MT02" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../diseno/md01/" title="MD01" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                MT02
+                MD01
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
