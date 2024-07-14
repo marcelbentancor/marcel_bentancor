@@ -3,9 +3,9 @@ site_name: Marcel Bentancor - UTEC & Fab Lab Barcelona
 site_description: Master in Design for Emergent Futures
 site_author: Marcel Bentancor
 copyright: Copyleft 2024 Marcel Bentancor" - GNU Free Documentation License
-repo_name: 'Name : Github Repo'
-site_url: https://fablabbcn.github.io/efdi-template/
-repo_url: https://github.com/fablabbcn/efdi-template
+repo_name: 'Name : Repositorio de EFDI de Marcel Bentancor'
+site_url: https://marcelbentancor.github.io/marcel_bentancor/
+repo_url: https://github.com/marcelbentancor/marcel_bentancor.git
 
 
 nav:
