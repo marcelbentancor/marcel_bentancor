@@ -530,8 +530,8 @@
                 
                 <h1 id="mt06">MT06<a class="headerlink" href="#mt06" title="Permanent link">&para;</a></h1>
 <p>En este modulo, denominado &ldquo;networking&rdquo; se trabajó sobre aspectos de conectividad. En esta sección presentó los 4 ejemplos que el docente mostró en clase, y dos implementaciones que luego hice: una del ejemplo 2, pero simulando la interacción entre dos placas a través de un servidor MQTT. Y en el otro caso, hice una segunda implementación a modo de entrega final de este módulo. </p>
-<p><strong>Ejercicio 1</strong>
-<img alt="" src="../../images/MT06/fig1.png" />
+<p><strong>Ejercicio 1</strong></p>
+<p><img alt="" src="../../images/MT06/fig1.png" />
 <strong>Figura 1</strong>, ensamblado usado en el ejercicio 1.  </p>
 <p>Este script está diseñado para trabajar con el circuito mostrado en la imagen, que incluye un microcontrolador ESP32, un LED y un botón. Aquí te explico lo que hace el script:</p>
 <ol>
@@ -586,8 +586,8 @@ Si el botón está presionado y pressed es falso, se establece pressed a verdade
 Cuando se suelta el botón (digitalRead(BUT) es verdadero, lo que significa HIGH), se restablece pressed a falso, preparando el sistema para la siguiente pulsación.
 El delay(100) al final del bucle también ayuda a reducir los rebotes, dando tiempo para que el botón se estabilice entre lecturas.</p>
 <p>Este método de debounce evita que se cuenten múltiples pulsaciones cuando el botón rebota físicamente durante una sola pulsación. Sin esta técnica, una sola pulsación podría registrarse como varias, lo que llevaría a un conteo incorrecto.</p>
-<p><strong>Ejercicio 2</strong>
-<img alt="" src="../../images/MT06/fig2.png" />
+<p><strong>Ejercicio 2</strong></p>
+<p><img alt="" src="../../images/MT06/fig2.png" />
 <strong>Figura 2</strong>, ensamblado usado en el ejercicio 2.  </p>
 <p>Este segundo script es más avanzado y utiliza comunicación WiFi y MQTT para controlar el LED y el botón. Voy a explicarlo y luego compararlo con el primer script:</p>
 <p>Explicación del segundo script:</p>
@@ -663,8 +663,8 @@ El delay(100) al final del bucle también ayuda a reducir los rebotes, dando tie
 <li>Segundo script: Adecuado para proyectos de IoT y sistemas distribuidos.</li>
 </ol>
 <p>En resumen, mientras que el primer script se centra en la interacción local con el ESP32, el segundo script expande significativamente las capacidades al integrar conectividad WiFi y MQTT, permitiendo control y monitoreo remotos, lo que lo hace más adecuado para aplicaciones de Internet de las Cosas (IoT).</p>
-<p><strong>Ejercicio 3</strong>
-<img alt="" src="../../images/MT06/fig3.png" />
+<p><strong>Ejercicio 3</strong></p>
+<p><img alt="" src="../../images/MT06/fig3.png" />
 <strong>Figura 3</strong>, ensamblado usado en el ejercicio 3.</p>
 <p>Este tercer script está diseñado para trabajar con el circuito que incluye un ESP32 y un LED NeoPixel. Aquí está el análisis del script:</p>
 <ol>
@@ -739,8 +739,8 @@ El delay(100) al final del bucle también ayuda a reducir los rebotes, dando tie
 <li>Ideal para proyectos IoT que requieren control de iluminación más avanzado.</li>
 </ol>
 <p>En resumen, este tercer script expande las capacidades de los anteriores al integrar un LED NeoPixel controlable por color, manteniendo la funcionalidad de comunicación remota vía MQTT. </p>
-<p><strong>Ejericio 4</strong>
-<img alt="" src="../../images/MT06/fig4.png" />
+<p><strong>Ejercicio 4</strong></p>
+<p><img alt="" src="../../images/MT06/fig4.png" />
 <strong>Figura 4</strong>, ensamblado usado en el ejercicio 4.</p>
 <p>Este cuarto script está diseñado para trabajar con el circuito que muestra un ESP32 conectado a un sensor analógico (probablemente un potenciómetro) en el pin 32. Aquí está el análisis del script:</p>
 <ol>
@@ -813,6 +813,11 @@ El delay(100) al final del bucle también ayuda a reducir los rebotes, dando tie
 <li>Ideal para proyectos IoT de monitoreo, donde se necesita recopilar y enviar datos de sensores regularmente.</li>
 </ol>
 <p>En resumen, este cuarto script se enfoca en la recolección y transmisión de datos de un sensor analógico. Es más simple en términos de interacción local (no hay control de LEDs o botones), pero proporciona una funcionalidad crucial para aplicaciones de IoT que requieren monitoreo continuo de variables físicas. Este tipo de script sería útil en proyectos como estaciones meteorológicas, sistemas de monitoreo ambiental, o cualquier aplicación donde se necesite recopilar y transmitir datos de sensores regularmente. </p>
+<p><strong>Implementación de comunicación entre dos placas ESP32, basado en el ejercicio 2</strong>
+Basándome en el ejercicio 2, creé dos simuladores de placas ESP32. Para cada una de estas configuré un cliente diferente del servicio MQTT, e intercmabié entre ambas los tópicos de publicación y lectura, de tal modo de establecer una vía de comunicación bidireccional entre ambas: al mantener oprimido el pulsador de una placa, se enciende el LED de la otra placa, tal como se aprecia en la figura 5. </p>
+<iframe width="560" height="315" src="https://youtu.be/R0yDDWTXmTQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<p><strong>Figura 5</strong>, funcionamiento de la implementación efectuada para simular la comunicación entre dos placas ESP32.</p>
+
 <p><strong>Entrega final del módulo</strong>
 Hice una simulación doble en Wokwi, simulando a dos placas coordinadas a través de un servidor MQTT. </p>
 <p>Placa 1. 
@@ -827,7 +832,7 @@ La idea es que a través de la placa 1, el fotorresistor envía el nivel de luz 
 <p>Para chequear la comunicación entre ambas placas, se puede presionar el pulsador de la placa 2, y esto ocasiona que se encienda el LED verde conectado a la placa 1. </p>
 <p>Se logró simular correctamente el comportamiento esperado, el cual se puede apreciar en la figura 6. </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gRTwzIjqgp8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<p><strong>Figura 6</strong>, video del timelapse del procesamiento de la pieza impresa.</p>
+<p><strong>Figura 6</strong>, video del funcionamiento del sistema creado para la entrega final de este módulo. </p>
                 
                   
                     
