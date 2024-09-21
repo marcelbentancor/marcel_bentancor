@@ -822,9 +822,11 @@ Basándome en el ejercicio 2, creé dos simuladores de placas ESP32. Para cada u
 Hice una simulación doble en Wokwi, simulando a dos placas coordinadas a través de un servidor MQTT. </p>
 <p>Placa 1. 
 Al simulador creado para esta placa puede accederse desde este enlace: <a href="https://wokwi.com/projects/409601839235474433">https://wokwi.com/projects/409601839235474433</a><br />
+Respaldé este proyecto de wokwi y puede <a href="../../archivos/MT06/marcel1.zip"><strong>descargarse desde aquí</strong></a>. 
 Es una placa ESP32 que tiene conectado un LED verde y un fotoresistor. </p>
 <p>Placa 2. 
 Al simulador creado para esta placa puede accederse desde este enlace: <a href="https://wokwi.com/projects/409613412113185793">https://wokwi.com/projects/409613412113185793</a>
+Respaldé este proyecto de wokwi y puede <a href="../../archivos/MT06/marcel2motor.zip"><strong>descargarse desde aquí</strong></a>. 
 Es una placa ESP32 que tiene conectados un LED rojo, un servomotor y un pulsador. </p>
 <p>Comportamiento esperado: 
 La idea es que a través de la placa 1, el fotorresistor envía el nivel de luz monitoreado, sí éste es bajo entonces ordena que en la placa 2 se encienda el led rojo y el servomotor que tiene conectados. Esto podría representar un mecanismo remoto para correr un cobertizo y encender las luces interiores de un recinto dependiendo del nivel de luz solar que detecte la placa 1 con su resistor expuesto al exterior. </p>
@@ -832,6 +834,22 @@ La idea es que a través de la placa 1, el fotorresistor envía el nivel de luz 
 <p>Se logró simular correctamente el comportamiento esperado, el cual se puede apreciar en la figura 6. </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gRTwzIjqgp8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <p><strong>Figura 6</strong>, video del funcionamiento del sistema creado para la entrega final de este módulo. </p>
+
+<div class="codehilite"><pre><span></span><code>&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Mi Página con Código&lt;/title&gt;
+&lt;style&gt;
+    pre {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+        font-family: &#39;Courier New&#39;, Courier, monospace;
+    }
+    code {
+        color: #333;
+    }
+</code></pre></div>
                 
                   
                     
