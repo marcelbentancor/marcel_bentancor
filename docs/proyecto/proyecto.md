@@ -171,4 +171,5 @@ Lopez-Gazpio, J., & Lopez-Gazpio, I. (2020). Constructing an electronic calorime
 
 
 # Actualización 2026
-[Artículo científico publicado](docs\archivos\proyecto_final\Bentancor_et_al_2026.pdf)
+[Artículo científico publicado](../archivos/proyecto_final/Bentancor_et_al_2026.pdf)
+
