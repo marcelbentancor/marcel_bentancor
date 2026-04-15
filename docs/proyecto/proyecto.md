@@ -11,21 +11,6 @@ Contribuir a la fabricación de un equipo calorimétrico automatizado apto para 
 
 # Introducción
 
-Dispositivos de uso científico desarrollados en modalidad open hardware. 
-A partir de la experiencia laboral propia y la consulta con diferentes colegas, se buscó identificar situaciones y contextos temáticos donde fuera factible la incorporación en laboratorios de dispositivos desarrollados en modalidad open hardware. Considerando los recursos disponibles para este proyecto y el alcance del mismo en el marco de la EFDI, es que se optó por el desarrollo de un equipo calorimétrico automatizado. 
-
-Los temarios de asignaturas cómo química general o fisicoquímica en la universidad a menudo incorporan el estudio de termodinámica y termoquímica. Este es el caso del curso de Fisicoquímica-I de la Facultad de Ciencias (UDELAR) del cual formé parte como docente durante varios años y el cual trata estos temas tanto desde el punto de vista teórico como práctico. Dentro de éste una de las prácticas que se ejecuta es el estudio termoquímica de diversas reacciones químicas. Este fue uno de los contextos identificados en los que la incorporación de nuevo hardware, desarrollado en forma abierta, pudiera ser de utilidad. En colaboración con el Dr Eduardo Méndez, responsable del Laboratorio de Biomateriales (Facultad de Ciencias, UdelaR) se diseñó un calorímetro automatizado apto para ser usado en las prácticas de este curso u otros cursos que incluya el estudio de la termoquímica. Con el mismo se busca mejorar los registros que puedan obtener los estudiantes durante las clases, colectando más puntos, con mayor exactitud y frecuencia respecto a la forma tradicional de hacer estas prácticas, mediante la operación manual de termómetros de mercurio. A su vez, esto permitirá sustituir el uso de estos instrumentos disminuyendo así las probabilidades de rotura accidental y la consiguiente exposición al mercurio, un reconocido agente neurotóxico. 
-
-Termoquímica, 
-Las reacciones químicas y los procesos físicos, como la disolución o los cambios en estados de agregación de la materia, están asociados a intercambios de calor con su entorno. Estos pueden absorber calor del entorno o liberarlo hacia él. Según esto, las reacciones o procesos se clasifican como endotérmicos, si absorben calor, y exotérmicos, si liberan calor (Figura 1).
-Título del proyecto: 
-Desarrollo en modalidad open hardware de un equipo calorimétrico. 
-
-# Objetivo: 
-Contribuir a la fabricación de un equipo calorimétrico automatizado apto para su uso en docencia universitaria. 
-
-# Introducción
-
 ## Dispositivos de uso científico desarrollados en modalidad open hardware. 
 A partir de la experiencia laboral propia y la consulta con diferentes colegas, se buscó identificar situaciones y contextos temáticos donde fuera factible la incorporación en laboratorios de dispositivos desarrollados en modalidad open hardware. Considerando los recursos disponibles para este proyecto y el alcance del mismo en el marco de la EFDI, es que se optó por el desarrollo de un equipo calorimétrico automatizado. 
 
@@ -183,3 +168,7 @@ Wadsö, L., Smith, A. L., Shirazi, H., Mulligan, S. R., & Hofelich, T. (2001). T
 Stankus, J. J., & Caraway, J. D. (2011). Replacement of coffee cup calorimeters with fabricated beaker calorimeters. Journal of Chemical Education, 88(12), 1730-1731.
 
 Lopez-Gazpio, J., & Lopez-Gazpio, I. (2020). Constructing an electronic calorimeter that students can use to make thermochemical and analytical determinations during laboratory experiments. Journal of Chemical Education. https://dx.doi.org/10.1021/acs.jchemed.0c00281
+
+
+# Actualización 2026
+[Artículo científico publicado](docs\archivos\proyecto_final\Bentancor_et_al_2026.pdf)
